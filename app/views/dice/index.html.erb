@@ -1,0 +1,33 @@
+<h1>Dice</h1>
+
+<% 
+die1 = rand(1..6)
+die2 = rand(1..6)
+%>
+
+<p>
+
+<%= die1 %>
+<%= die2 %>
+
+</p>
+<p>
+<img src="/images/dice/<%= die1 %>.svg" alt="">
+<img src="/images/dice/<%= die2 %>.svg" alt="">
+
+
+</p>
+<p>
+
+<% total = die1 + die2 %>
+<%= "The total is #{total}"%>
+
+</p>
+
+<p>
+<a href="/dice">Roll again!</a>
+<!-- We don't need the full URL since it is within our own website / code, so can just use  /dice -->
+</p>
+
+<%# ruby comment %>
+<!-- html comment -->
